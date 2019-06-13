@@ -182,6 +182,8 @@ header nav {
     font-family: 'Major Mono Display', monospace;
     border: white solid 4px;
     background-color: rgb(75, 127, 114, 0.50);
+    margin-top: 20px;
+    margin-right:
 }
 
 header nav a {
@@ -661,7 +663,6 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .mail_logo {
@@ -704,29 +705,17 @@ header nav a {
     margin-top: 25px;
 }
 
-.mail {
-    display: flex;
-}
-
-.telefon {
-    display: flex;
-}
-
-@media only screen and (min-width: 740px) {
-
+@media only screen and (max-width: 750px) {
     #kontakt {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .kontakt {
-        width: 100%;
-
+        flex-direction: column;
+        align-items: center;
     }
 
     .kontakt_indhold {
-        max-width: 270px;
-
+        width: 270px;
     }
+
 }
