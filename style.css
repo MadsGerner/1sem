@@ -131,14 +131,47 @@ a:active {
     flex-direction: column;
 }
 
+
 #mads {
-    padding-bottom: 130px;
-    padding-left: 25px;
+    position: absolute;
+    top: 30vw;
+    left: 3vw;
+}
+
+#mads h3 {
+    font-size: 80px;
+}
+
+
+.slide {
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes slide {
+    0% {
+        left: -100vw;
+    }
+
+    50% {
+        left: 30vw;
+    }
+
+    100% {
+        left: 3vw;
+    }
+
 }
 
 @media only screen and (max-width: 1200px) {
     #mads {
-        padding-bottom: 10px;
+        top: 27vw;
+    }
+
+    #mads h3 {
+        font-size: 45px;
     }
 }
 
@@ -182,8 +215,8 @@ header nav {
     font-family: 'Major Mono Display', monospace;
     border: white solid 4px;
     background-color: rgb(75, 127, 114, 0.50);
-    margin-top: 20px;
-    margin-right:
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 header nav a {
