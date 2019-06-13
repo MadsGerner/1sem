@@ -1,0 +1,732 @@
+/**
+1.GENERALT
+2.SPLASH
+3.MENU
+4.CV
+5.PORTFOLIO
+6.FONTS
+**/
+
+
+/**1. GENERALT**/
+body {
+    margin: 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+    color: #4B7F72;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Major Mono Display', monospace;
+    color: #4B7F72;
+    font-size: 50px;
+
+}
+
+h3 {
+    font-family: 'Major Mono Display', monospace;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+h4 {
+    font-family: 'Major Mono Display', monospace;
+    color: #FFFF;
+    font-size: 50px;
+}
+
+h5 {
+    font-family: 'Major Mono Display', monospace;
+    color: #4B7F72;
+    font-size: 30px;
+
+}
+
+h6 {
+    font-family: 'helvetica', monospace;
+    color: #4B7F72;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h7 {
+    font-family: 'helvetica', monospace;
+    color: #4B7F72;
+    font-size: 20px;
+
+
+}
+
+h8 {
+    font-family: 'Major Mono Display', monospace;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+h9 {
+    font-family: 'helvetica', monospace;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h10 {
+    font-family: 'helvetica', monospace;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    transform: scale(1.1);
+}
+
+#splash a:hover {
+    text-decoration: line-through;
+    text-decoration-color: white;
+    cursor: default;
+}
+
+#web a:hover {
+    text-decoration: line-through;
+    text-decoration-color: white;
+
+}
+
+#content a:hover {
+    text-decoration: line-through;
+    text-decoration-color: white;
+}
+
+#animation a:hover {
+    text-decoration: line-through;
+    text-decoration-color: #4B7F72;
+}
+
+#ux a:hover {
+    text-decoration: line-through;
+    text-decoration-color: #4B7F72;
+}
+
+/**2.SPLASH**/
+
+#splash {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(assets/splash/splashArtboard%2025-100.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#mads {
+    padding-bottom: 130px;
+    padding-left: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #mads {
+        padding-bottom: 10px;
+    }
+}
+
+#mads h3 {
+    margin: 0;
+}
+
+/**3.MENU**/
+
+
+header nav a:link {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:visited {
+    color: white;
+}
+
+header nav a:hover {
+    text-decoration: line-through;
+    text-decoration-color: white;
+}
+
+header nav a:active {
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100vw;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px;
+    font-family: 'Major Mono Display', monospace;
+    border: white solid 4px;
+    background-color: rgb(75, 127, 114, 0.50);
+}
+
+header nav a {
+    font-size: 1.5rem;
+}
+
+/**4.CV**/
+
+#cv {
+    background-color: white;
+    margin-bottom: 75px;
+}
+
+.cv {
+    display: flex;
+    justify-content: center;
+}
+
+.cv_section {
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cv_img {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.img {
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    background-image: url(assets/cv/download.png);
+    background-position: center;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.cv_txt {
+    max-width: 450px;
+    height: 400px;
+}
+
+.cv_txt h5 {
+    margin: 25px 0px;
+}
+
+/**5.PORTFOLIO**/
+
+/**5.1.WEB**/
+
+#web {
+    background-color: #4B7F72;
+
+}
+
+.web {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+
+}
+
+.web_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+.web_text {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    height: 1000px;
+    margin: 25px 0px;
+}
+
+.web_img1 {
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    background-image: url(assets/stilart_site/splash.png);
+    background-position: center;
+    margin-top: 25px;
+}
+
+.web_img2 {
+    display: flex;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/stilart_site/icon.png);
+    background-position: center;
+}
+
+.web_img3 {
+    display: flex;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/stilart_site/ideskitse.jpg);
+    background-position: center;
+    margin-left: 50px;
+
+}
+
+.web_img {
+    display: flex;
+    Flex-wrap: wrap;
+    flex-direction: row;
+    width: 450px;
+    height: 750px;
+
+}
+
+.web_img1:hover {
+    transform: scale(1.5);
+}
+
+.web_img2:hover {
+    transform: scale(2);
+}
+
+.web_img3:hover {
+    transform: scale(2);
+}
+
+/**5.2.ANIMATION 1**/
+#animation {
+    background-color: #FFFFFF;
+    padding-bottom: 75px;
+}
+
+.animation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.animation1 {
+    display: flex;
+    Flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.animation1_img1 {
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    background-image: url(assets/trash_hero/Titelsk%C3%A6rm.jpg);
+    background-position: center;
+    margin-top: 25px;
+}
+
+.animation1_img2 {
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    background-image: url(assets/trash_hero/game_over.svg);
+    background-position: center;
+    margin-top: 25px;
+
+}
+
+.animation1_img3 {
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    background-image: url(assets/trash_hero/winner_screen.svg);
+    background-position: center;
+    margin-top: 25px;
+}
+
+.animation1_txt {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    height: 1000px;
+    padding-left: 25px;
+    margin-top: 25px;
+}
+
+.animation1_txt h5 {
+    margin: 0px 0px;
+}
+
+.animation1_img1:hover {
+    transform: scale(1.2);
+}
+
+.animation1_img2:hover {
+    transform: scale(1.2);
+}
+
+.animation1_img3:hover {
+    transform: scale(1.2);
+}
+
+/**5.3.ANIMATION 2**/
+
+.animation2 {
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.animation2_txt {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    height: 1100px;
+    margin-top: 25px;
+    padding-right: 25px;
+
+}
+
+.animation2_txt h5 {
+    margin: 0px;
+}
+
+.animation2_img1 {
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    background-image: url(assets/sletdet_privatsnak/startscreen.jpg);
+    background-position: center;
+    margin-top: 25px;
+}
+
+.animation2_img2 {
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    background-image: url(assets/sletdet_privatsnak/trello_backlog.png);
+    background-position: center;
+    margin-top: 25px;
+}
+
+.animation2_img3 {
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    background-image: url(assets/sletdet_privatsnak/burndown_chart.jpg);
+    background-position: center;
+    margin-top: 25px;
+}
+
+.animation2_img1:hover {
+    transform: scale(1.2);
+}
+
+.animation2_img2:hover {
+    transform: scale(1.2);
+}
+
+.animation2_img3:hover {
+    transform: scale(1.2);
+}
+
+/**5.4.CONTENT**/
+#content {
+    background-color: #4B7F72;
+    padding-bottom: 75px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.content_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px;
+
+}
+
+.content_video {
+    width: 450px;
+}
+
+.content_img1 {
+    background-size: contain;
+    width: 450px;
+    height: 120px;
+    background-image: url(assets/haerlobet/splashbillede.png);
+    margin-top: 25px;
+}
+
+.content_img2 {
+    background-size: contain;
+    width: 450px;
+    height: 450px;
+    background-image: url(assets/haerlobet/tilmelding.jpg);
+    margin-top: 25px;
+}
+
+.content_img3 {
+    background-size: contain;
+    width: 450px;
+    height: 120px;
+    background-image: url(assets/haerlobet/splashbilledewhite.png);
+}
+
+.content_txt {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    height: 1000px;
+    padding-left: 25px;
+
+}
+
+.content_video:hover {
+    transform: scale(1.2);
+}
+
+.content_img1:hover {
+    transform: scale(1.2);
+}
+
+.content_img2:hover {
+    transform: scale(1.2);
+}
+
+.content_img3:hover {
+    transform: scale(1.2);
+}
+
+/**5.5 UX **/
+
+#ux {
+    background-color: #FFFFFF;
+    padding-bottom: 75px;
+
+}
+
+.ux {
+    display: flex;
+    justify-content: center;
+
+}
+
+.ux_section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ux_txt {
+    max-width: 450px;
+    height: 1250px;
+}
+
+.ux_img1 {
+    background-size: contain;
+    width: 300px;
+    height: 1200px;
+    background-image: url(assets/ux/Screenshot%202019-06-09%20at%2016.54.09.png);
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.ux_section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.ux_img2 {
+    background-size: cover;
+    width: 112px;
+    height: 112px;
+    background-image: url(assets/fronter_proto/Screenshot%202019-06-09%20at%2011.05.00.png);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.ux_img3 {
+    background-size: cover;
+    width: 112px;
+    height: 112px;
+    background-image: url(assets/fronter_proto/Screenshot%202019-06-09%20at%2011.05.09.png);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.ux_img4 {
+    background-size: cover;
+    width: 112px;
+    height: 112px;
+    background-image: url(assets/fronter_proto/Screenshot%202019-06-09%20at%2011.05.31.png);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.ux_img5 {
+    background-size: cover;
+    width: 112px;
+    height: 112px;
+    background-image: url(assets/fronter_proto/Screenshot%202019-06-09%20at%2011.05.39.png);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.ux_img6 {
+    background-size: cover;
+    width: 112px;
+    height: 112px;
+    background-image: url(assets/fronter_proto/Screenshot%202019-06-09%20at%2011.05.46.png);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.ux_img7 {
+    background-size: cover;
+    width: 112px;
+    height: 112px;
+    background-image: url(assets/fronter_proto/Screenshot%202019-06-09%20at%2011.05.54.png);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.ux_img1:hover {
+    transform: scale(1.1);
+}
+
+.ux_img2:hover {
+    transform: scale(2);
+}
+
+.ux_img3:hover {
+    transform: scale(2);
+}
+
+.ux_img4:hover {
+    transform: scale(2);
+}
+
+.ux_img5:hover {
+    transform: scale(2);
+}
+
+.ux_img6:hover {
+    transform: scale(2);
+}
+
+.ux_img7:hover {
+    transform: scale(2);
+}
+
+/**6.KONTAKT**/
+
+#kontakt {
+    background-color: #4B7F72;
+    padding-bottom: 75px;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.kontakt_indhold {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.mail_logo {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/kontakt/mail.png);
+    margin-top: 15px;
+}
+
+.mail_txt {
+    margin-top: 25px;
+    padding-left: 5px;
+}
+
+.telefon_logo {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/kontakt/telefon.png);
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.telefon_txt {
+    margin-top: 25px;
+
+}
+
+.instagram_logo {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-image: url(assets/kontakt/instagram.png);
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.instagram_txt {
+    margin-top: 25px;
+}
+
+.mail {
+    display: flex;
+}
+
+.telefon {
+    display: flex;
+}
+
+@media only screen and (min-width: 740px) {
+
+    #kontakt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .kontakt {
+        width: 100%;
+
+    }
+
+    .kontakt_indhold {
+        max-width: 270px;
+
+    }
+}
