@@ -13,7 +13,6 @@ body {
     margin: 0;
 }
 
-
 img {
     width: 100%;
 }
@@ -21,46 +20,45 @@ img {
 h1 {
     font-family: 'Major Mono Display', monospace;
     color: #4B7F72;
-    font-size: 50px;
+    font-size: 3.125rem
 }
 
 h2 {
     font-family: 'Major Mono Display', monospace;
     color: #4B7F72;
-    font-size: 50px;
-
+    font-size: 3.125rem
 }
 
 h3 {
     font-family: 'Major Mono Display', monospace;
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 3.125rem
 }
 
 h4 {
     font-family: 'Major Mono Display', monospace;
     color: #FFFF;
-    font-size: 50px;
+    font-size: 3.125rem
 }
 
 h5 {
     font-family: 'Major Mono Display', monospace;
     color: #4B7F72;
-    font-size: 30px;
+    font-size: 1.875rem;
 
 }
 
 h6 {
     font-family: 'helvetica', monospace;
     color: #4B7F72;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 h7 {
     font-family: 'helvetica', monospace;
     color: #4B7F72;
-    font-size: 20px;
+    font-size: 1.25rem;
 
 
 }
@@ -74,19 +72,19 @@ h8 {
 h9 {
     font-family: 'helvetica', monospace;
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 h10 {
     font-family: 'helvetica', monospace;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 h11 {
     font-family: 'helvetica', monospace;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: bold;
 }
 
@@ -150,7 +148,7 @@ a:active {
 }
 
 #mads h3 {
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 
@@ -165,21 +163,11 @@ a:active {
 @keyframes slide {
     0% {
         left: -200vw;
-        transform: rotate(0.5deg)
-    }
-
-    20% {
-        transform: rotate(-0.5deg)
-    }
-
-    40% {
-        transform: rotate(-1eg)
     }
 
     60% {
         left: 70vw;
-        top: 29.99vw;
-        transform: rotate(-2deg)
+        top: 32vw;
     }
 
     100% {
@@ -195,7 +183,24 @@ a:active {
     }
 
     #mads h3 {
-        font-size: 45px;
+        font-size: 2.8125rem;
+    }
+
+    @keyframes slide {
+        0% {
+            left: -200vw;
+        }
+
+        60% {
+            left: 70vw;
+            top: 27vw;
+        }
+
+        100% {
+            left: 3vw;
+        }
+
+
     }
 }
 
@@ -229,6 +234,7 @@ header {
     position: fixed;
     justify-content: flex-end;
     width: 100vw;
+    z-index: 10;
 }
 
 header nav {
@@ -245,6 +251,32 @@ header nav {
 
 header nav a {
     font-size: 1.5rem;
+}
+
+.dropdown_knap {
+    font-family: 'major mono display'
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown_content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9375rem;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
 }
 
 /**4.CV**/
@@ -290,6 +322,13 @@ header nav a {
 
 .cv_txt h5 {
     margin: 25px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cv_txt {
+        max-width: 350px;
+        height: 550px;
+    }
 }
 
 /**5.PORTFOLIO**/
@@ -362,15 +401,23 @@ header nav a {
 }
 
 .web_img1:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .web_img2:hover {
-    transform: scale(2);
+    transform: scale(1.5);
+
 }
 
 .web_img3:hover {
-    transform: scale(2);
+    transform: scale(1.7);
+}
+
+@media only screen and (max-width: 1200px) {
+    .web_text {
+        max-width: 350px;
+        height: 1100px;
+    }
 }
 
 /**5.2.ANIMATION 1**/
@@ -445,6 +492,16 @@ header nav a {
     transform: scale(1.2);
 }
 
+@media only screen and (max-width: 1200px) {
+    .animation1_txt {
+        max-width: 350px;
+        height: 1100px;
+        padding-left: 0px;
+        margin-top: 0px;
+
+    }
+}
+
 /**5.3.ANIMATION 2**/
 
 .animation2 {
@@ -505,6 +562,16 @@ header nav a {
 
 .animation2_img3:hover {
     transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1200px) {
+    .animation2_txt {
+        max-width: 350px;
+        height: 1300px;
+        padding-left: 0px;
+        margin-top: 0px;
+
+    }
 }
 
 /**5.4.CONTENT**/
@@ -580,6 +647,17 @@ header nav a {
     transform: scale(1.2);
 }
 
+
+@media only screen and (max-width: 1200px) {
+    .content_txt {
+        max-width: 350px;
+        height: 1300px;
+        padding-left: 0px;
+        margin-top: 0px;
+
+    }
+}
+
 /**5.5 UX **/
 
 #ux {
@@ -587,6 +665,7 @@ header nav a {
     padding-bottom: 75px;
 
 }
+
 
 .ux {
     display: flex;
@@ -701,6 +780,16 @@ header nav a {
 
 .ux_img7:hover {
     transform: scale(2);
+}
+
+@media only screen and (max-width: 1200px) {
+    .ux_txt {
+        max-width: 350px;
+        height: 1700px;
+        padding-left: 0px;
+        margin-top: 0px;
+
+    }
 }
 
 /**6.KONTAKT**/
